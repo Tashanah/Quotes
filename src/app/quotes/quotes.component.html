@@ -5,7 +5,7 @@
     <div *ngFor='let quote of quotes;let i = index'>
         <li>{{quote.name}}, {{quote.description}}</li>
         <button  (click)='toogleDetails(i)'>Toogle Details</button>
-        <app-quotes-details *ngIf="quote.showDescription"  [quote]='quote'></app-quotes-details>
+        <app-quotes-details *ngIf="quote.showDescription"  [quote]='quote' (isComplete)='completeQuote($event,i)'></app-quotes-details>
 
 
 
