@@ -15,7 +15,10 @@ export class QuotesComponent implements OnInit {
       new Quotes(5, 'Believe, act as if, live, like you already have it.','When you need a few words of encouragement, support and inspiration'),
 
 
-  ]
+  ] 
+  toogleDetails(index){
+          this.quotes[index].showDescription = !this.quotes[index].showDescription;
+      }
 
   constructor() { }
 
