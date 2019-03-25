@@ -3,7 +3,7 @@
   <app-quotes-details *ngIf="quote.showDescription"  [quote]='quote'></app-quotes-details>
 
 <ul>
-    <div *ngFor='let quote of quotes'>
+    <div *ngFor='let quote of quotes';let i = index'>
         <li>{{quote.name}}, {{quote.description}}</li>
 
 
