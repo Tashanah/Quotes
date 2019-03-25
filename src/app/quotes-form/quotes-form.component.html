@@ -1,10 +1,11 @@
 <div class="container-fluid">
     <div class="row">
-        <form>
+        <form #quotesForm='ngForm'>
             <div class="form-group">
 
                 <label for="quote">Quote</label>
-                <input type="text" required class="form-control" id="quote">
+                <input type="text" required class="form-control" id="name" [(ngModel)]="newQuotes.name" name="name" >
+                Display {{newQuotes.name}}
 
             </div>
             <div class="form-group">
