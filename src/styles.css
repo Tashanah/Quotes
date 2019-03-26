@@ -8,8 +8,15 @@ background-repeat: no-repeat;
 background-size: cover;
 
 }
-.form-group{
-  color: black;
+.well{
+  background-color: black;
+  color: white;
+  width: 400px;
+  padding: 40px;
+}
+input,text area{
+  width: 150px;
+  width:100%;
 }
 #bg{
   background-color: white;
