@@ -8,7 +8,7 @@
         <div class="col-md-6" id="bg">
           <ol>
           <div class="panel panel-success">
-            <div *ngFor='let quote of quotes;let i = index'>
+            <div  *ngFor='let quote of quotes;let i = index'>
                 <li><p id="quote-name"><strong>{{"Quote: " + quote.name}}</strong></p> <p id="quote-description"><strong>{{"Description: " + quote.description}}</strong></p> <p id="quote-description">{{"Published on:" + quote.submitDate|date}}, {{"By :" + quote.author}}<p> <strong>{{"Upvote: " + quote.upvote}}  {{"Downvote: " + quote.downvote}}</strong></p></li>
           <!-- <button (click) = 'quotedelete(true)'> Delete quote </button> -->
 
