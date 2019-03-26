@@ -12,11 +12,15 @@ h1{
   text-align: center;
 }
 
-.well{
+.form{
   background-color: black;
   color: white;
   width: 400px;
   padding: 40px;
+}
+.well{
+  background-color: black;
+  color: white;
 }
 label{
   text-align: center;
@@ -29,6 +33,10 @@ input,text area{
 }
 #bg{
   background-color: white;
+  padding: 40px
+}
+.jumbotron{
+  padding: 30px;
 }
 #quote-description{
   font-family: 'Marck Script', cursive;
