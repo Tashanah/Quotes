@@ -35,9 +35,10 @@ input,text area{
   background-color: white;
   padding: 40px
 }
-.jumbotron{
-  padding: 30px;
-}
+/* .jumbotron{
+  padding: 200px;
+  border: 30px;
+} */
 #quote-description{
   font-family: 'Marck Script', cursive;
   font-size: 20px;
