@@ -1,26 +1,31 @@
-<h1>Quotes</h1>
-<h2>Please enter your quotes below. </h2>
+<h1> <strong>QUOTES</strong></h1>
+<h2><em>Please enter your quotes below.</em> </h2>
 <div class="container">
     <div class="row">
+      <div class="col-md-6">
         <app-quotes-form (addQuotes)="addNewQuotes($event)" ></app-quotes-form>
+      </div>
+        <div class="col-md-6" id="bg">
+          <ol>
+          <div class="panel panel-success">
+            <div *ngFor='let quote of quotes;let i = index'>
+                <li><p>{{"Quote: " + quote.name}}</p> <p>{{"Description: " + quote.description}}</p> <p>{{"Date submitted: " + quote.submitDate|date}}</p> <p>{{"Author:" + quote.author}}</p><p>{{"Upvote: " + quote.upvote}}</p><p>{{"Downvote: " + quote.downvote}}</p></li>
+          <!-- <button (click) = 'quotedelete(true)'> Delete quote </button> -->
+
+
+                <app-quotes-details   (isDelete)='deleteQuote($event,i)' [quote]='quote'></app-quotes-details>
+                <button class="btn btn-success" (click)="upvotes(i)">Upvote</button>
+                <button  class="btn btn-danger" (click)="downvotes(i)">Downvote</button>
+
+
+
+            </div>
+
+          </div>
+
+
+          </ol>
+
+        </div>
     </div>
 </div>
-<ol>
-<div class="panel panel-success">
-  <div *ngFor='let quote of quotes;let i = index'>
-      <li><p>{{"Quote: " + quote.name}}</p> <p>{{"Description: " + quote.description}}</p> <p>{{"Date submitted: " + quote.submitDate|date}}</p> <p>{{"Author:" + quote.author}}</p><p>{{"Upvote: " + quote.upvote}}</p><p>{{"Downvote: " + quote.downvote}}</p></li>
-<!-- <button (click) = 'quotedelete(true)'> Delete quote </button> -->
-
-
-      <app-quotes-details   (isDelete)='deleteQuote($event,i)' [quote]='quote'></app-quotes-details>
-      <button class="btn btn-success" (click)="upvotes(i)">Upvote</button>
-      <button  class="btn btn-danger" (click)="downvotes(i)">Downvote</button>
-
-
-
-  </div>
-
-</div>
-
-
-</ol>

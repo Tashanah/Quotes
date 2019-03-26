@@ -1,12 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
-/* @import "~bootstrap/dist/css/bootstrap.css"
+ /* You can add global styles to this file, and also import other style files */
+ /* @import "~bootstrap/dist/css/bootstrap.css" */
+
 body{
-  color:red;
-} */
-body{
-  color:white;
+  color:black; 
 background-image:url('https://images.pexels.com/photos/1287217/pexels-photo-1287217.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') ;
 background-repeat: no-repeat;
 background-size: cover;
 
+}
+.form-group{
+  color: black;
 }
