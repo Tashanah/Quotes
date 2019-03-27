@@ -5,14 +5,14 @@
 </div>
 
 
-<h2><em>Please enter your quotes below.</em> </h2>
+<!-- <h2><em>Please enter your quotes below.</em> </h2> -->
 <div class="container">
   <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-5">
       <app-quotes-form (addQuotes)="addNewQuotes($event)"></app-quotes-form>
     </div>
 
-    <div class="col-md-6" id="bg">
+    <div class="col-md-7" id="bg">
 
       <ol>
         <div class="well">
@@ -23,11 +23,11 @@
 
           <div *ngFor='let quote of quotes;let i = index'>
 
-            <li>
-              <p id="quote-name"><strong>{{"Quote: " + quote.name}}</strong></p>
-              <p id="quote-description"><strong>{{"Description: " + quote.description}}</strong></p>
-              <p id="quote-description">{{"Published on:" + quote.submitDate|date}}, {{"By :" + quote.author}}
-                <p> <strong>{{"Upvote: " + quote.upvote}} {{"Downvote: " + quote.downvote}}</strong></p>
+            <li id="quote-description">
+              <p id="quote-name"><strong>{{" " + quote.name}}</strong></p>
+              <p id="quote-description"><em>{{"- " + quote.description}}</em></p>
+              <p id="quote-description"><em>{{"Published on:" + quote.submitDate|date}}, {{"By :" + quote.author}}</em></p>
+                <p id="quote-description"> <em>{{"Upvote: " + quote.upvote}} {{"Downvote: " + quote.downvote}}</em></p>
             </li>
             <!-- <button (click) = 'quotedelete(true)'> Delete quote </button> -->
 
