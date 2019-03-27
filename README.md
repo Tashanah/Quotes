@@ -1,6 +1,29 @@
 # Quotes
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.6.
+This is a web app that displays quotes and allows users to enter their own quotes, delete quotes, upvote or downvote a quote.
+# SETUP INSTRUCTIONS
+1.Once you open the page, Enter the necessary quote values in the quotes form
+
+
+
+2.After entering all necessary buttons, click on the submit button below
+
+
+
+3.You can now view your quote on the Quotes section
+
+
+4.To, view more quote details, such as number of quote likes and dislikes, click on the ShowDetails button
+
+
+## BEHAVIOUR DRIVEN DEVELOPMENT
+| GENERAL BEHAVIOUR | INPUT | OUTPUT|
+|:------------------|:--------|:-----------|
+|Enter quote| string input|Display quote written|
+|Enter name| string input|Display the author of the quote|
+|Enter publish Date|date input|Display day quote was published|
+|Click submit button|------|Display inputted quote in the quotes section|
 
 ## Development server
 
@@ -25,3 +48,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+## CONTACT INFORMATION
+By me some tea through my email address : <tmuhando99@gmail.com>
