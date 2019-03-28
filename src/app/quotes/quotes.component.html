@@ -24,7 +24,14 @@
           <div *ngFor='let quote of quotes;let i = index'>
 
             <li id="quote-description">
-              <p id="quote-name"><strong>{{" " + quote.name}}</strong></p>
+              <p id="quote-name" appHighlight *ngIf="highestUpvote()===quote.upvote && quote.upvote>0">
+                   {{quote.name}}
+
+                 </p>
+                  <p id="quote-name"  *ngIf="highestUpvote()!==quote.upvote || quote.upvote===0">{{quote.name}}
+                  </p>
+              <!-- <p  *ngIf="highestUpvote()!==quote.upvotes || quote.upvotes===0"><strong>{{" " + quote.name}}</strong> </p>
+<p></p> -->
               <p id="quote-description"><em>{{"- " + quote.description}}</em></p>
               <p id="quote-description"><em>{{"Published on:" + quote.submitDate|date}}, {{"By :" + quote.author}}</em></p>
                 <p id="quote-description"> <em>{{"Upvote: " + quote.upvote}} {{"Downvote: " + quote.downvote}}</em></p>
